@@ -26,5 +26,19 @@ namespace KTNHOMYEETPRO
         {
 
         }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            string username = txtUserName.Text;
+            string password = txtpassword.Text;
+            if(username=="admin" && password == "admin")
+            {
+                MessageBox.Show("đăng nhập thành công");
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập thất bại");
+            }
+        }
     }
 }
